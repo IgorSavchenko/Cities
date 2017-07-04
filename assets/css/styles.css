@@ -1,0 +1,136 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* h1, h2 {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.header {
+  background: #423E3B;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.header-icon {
+  display: block;
+  width: 200px;
+  margin: -20px auto;
+}
+
+.header-title {
+  display: block;
+  margin: -20px 0 0 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+  /*normal*/
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+
+/*.header-title::before {
+  content: "";
+  display: block; /*!!!*/
+/*background-image: url("/assets/img/header.png");
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+
+.header-title::before, .header-title::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 3px;
+  background: #fff;
+  vertical-align: middle;
+}
+
+.header-title::before {
+  margin-right: 10px;
+}
+
+.header-title::after {
+  margin-left: 10px;
+}
+
+.cities {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /*!!!!!!!!!!!!!!!!!!!!!*/
+  /*thing to remove spaces between elements in a row*/
+  font-size: 0;
+}
+
+.city {
+  display: inline-block;
+  width: 50%;
+  height:450px;
+  vertical-align: top;
+  /*!!!!!!!!!!!!!!*/
+  /*another thing to remove spaces between elements in a row*/
+  /*margin-right: -4px;*/
+  text-align: center;
+  padding: 60px 0;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.city:nth-child(4n+2),
+.city:nth-child(4n+3) {
+  background: #d7d7d7;
+}
+
+.city-img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.city-title {
+  margin: 10px 0 0;
+  /*margin-bottom*/
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #423E3B;
+}
+
+.city-description {
+  margin: 15px auto 0;
+  max-width: 550px;
+  /*cancel horizontal scrolbar*/
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 30px;
+  color: #666;
+}
+
+.footer {
+  clear: both;
+  padding: 80px 0;
+  background: #423E3B;
+  text-align: center;
+}
+
+.footer-text {
+  margin: auto;
+  font-family: Georgia;
+  font-size: 14px;
+  color: #fff;
+  font-style: italic;
+  line-height: 30px;
+}
