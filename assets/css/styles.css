@@ -7,12 +7,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?f93sq5');
-  src:  url('../fonts/icomoon.woff?f93sq5') format('woff');
+  src: url('../fonts/icomoon.eot?f93sq5');
+  src: url('../fonts/icomoon.woff?f93sq5') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -45,11 +44,9 @@
   letter-spacing: 2px;
 }
 
-
 /*.header-title::before {
   content: "";
   display: block; /*!!!*/
-
 
 /*background-image: url("/assets/img/header.png");
   margin: 0 auto;
@@ -90,6 +87,7 @@
   display: inline-block;
   width: 50%;
   height: 500px;
+  overflow: hidden; /*scroll-bar off*/
   vertical-align: top;
   /*!!!!!!!!!!!!!!*/
   /*another thing to remove spaces between elements in a row*/
@@ -102,11 +100,11 @@
   background: #d7d7d7;
 }
 
-.city-img {
+/*.city-img {
   display: block;
   margin: 0 auto;
   width: 150px;
-}
+}*/
 
 .city-title {
   margin: 10px 0 0;
@@ -143,11 +141,25 @@
   font-style: italic;
   line-height: 30px;
 }
+
+@media (max-width: 768px) {
+  .responsive-size {
+    width: 100%;
+  }
+
+  .city:nth-child(2n+2) {
+    background: #d7d7d7;
+  }
+
+.city:nth-child(2n+1) {
+  background: #ffffff;
+}
+
+}
+
 /*icons*/
-/*old version*/
-/*[class^="icon-"], [class*=" icon-"]*/
+
 .icon {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -156,7 +168,6 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -165,42 +176,55 @@
 .icon-amsterdam:before {
   content: "\e900";
 }
+
 .icon-austin:before {
   content: "\e901";
 }
+
 .icon-barcelona:before {
   content: "\e902";
 }
+
 .icon-berlin:before {
   content: "\e903";
 }
+
 .icon-cape-town:before {
   content: "\e904";
 }
+
 .icon-dublin:before {
   content: "\e905";
 }
+
 .icon-london:before {
   content: "\e906";
 }
+
 .icon-new-york:before {
   content: "\e907";
 }
+
 .icon-paris:before {
   content: "\e908";
 }
+
 .icon-san-francisco:before {
   content: "\e909";
 }
+
 .icon-stockholm:before {
   content: "\e90a";
 }
+
 .icon-sydney:before {
   content: "\e90b";
 }
+
 .icon-tokyo:before {
   content: "\e90c";
 }
+
 .icon-wellington:before {
   content: "\e90d";
 }
